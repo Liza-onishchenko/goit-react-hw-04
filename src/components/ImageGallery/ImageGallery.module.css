@@ -1,23 +1,18 @@
 .list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, 1fr); /* 4 колонки */
   gap: 10px;
-  padding: 10px;
-  list-style-type: none;
-  margin: 0px;
+  list-style: none;
+  padding: 0;
+  margin-top: 5px;
 }
 
 .listCard {
-  width: 100%;
-  height: 200px;
-  overflow: hidden; /* Сховати все, що виходить за межі */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  overflow: hidden; /* Сховати частини зображень що виходять за межі */
 }
 
 .listCard img {
-  /* width: 100%;  */
-  height: auto; /* Зберігає пропорції */
-  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Зберегти пропорції зображення */
 }
